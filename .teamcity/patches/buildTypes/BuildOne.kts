@@ -11,7 +11,7 @@ accordingly, and delete the patch script.
 changeBuildType(RelativeId("BuildOne")) {
     params {
         add {
-            param("param", "1")
+            param("param", "2")
         }
     }
 }
