@@ -11,7 +11,7 @@ accordingly, and delete the patch script.
 changeBuildType(RelativeId("BuildThreeSameVcs")) {
     params {
         add {
-            param("parasm1", "1")
+            param("parasm1", "2")
         }
     }
 }
