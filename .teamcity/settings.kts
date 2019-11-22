@@ -41,7 +41,11 @@ project {
 
 object BuildOne : BuildType({
     name = "build one"
-
+params {
+        
+            param("param", "2")
+           }
+    
     vcs {
         root(BuildoneRoot)
     }
