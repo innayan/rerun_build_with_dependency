@@ -138,13 +138,13 @@ object Template_1 : Template({
 })
 
 object Buildone : GitVcsRoot({
-    name = "buildone"
+    name = "buildone_root"
     url = "https://github.com/innayan/buildone"
     branchSpec = "+:*"
 })
 
 object Buildtwo : GitVcsRoot({
-    name = "buildtwo"
+    name = "buildtwo_root"
     url = "https://github.com/innayan/buildtwo"
     branchSpec = "+:*"
 })
