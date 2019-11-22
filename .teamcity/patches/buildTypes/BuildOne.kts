@@ -10,7 +10,10 @@ accordingly, and delete the patch script.
 */
 changeBuildType(RelativeId("BuildOne")) {
     params {
-        add {
+        expect {
+            param("param", "3")
+        }
+        update {
             param("param", "2")
         }
     }
