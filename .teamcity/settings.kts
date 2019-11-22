@@ -43,7 +43,7 @@ object BuildOne : BuildType({
     name = "build one"
 params {
         
-            param("param", "2")
+            param("param", "3")
            }
     
     vcs {
@@ -72,7 +72,7 @@ object BuildThreeSameVcs : BuildType({
     name = "build three same VCS"
     
 params {
-            param("params", "2")
+            param("params", "3")
         }
     
     vcs {
