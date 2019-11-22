@@ -66,7 +66,11 @@ object BuildOne : BuildType({
 
 object BuildThreeSameVcs : BuildType({
     name = "build three same VCS"
-
+    
+params {
+            param("params", "2")
+        }
+    
     vcs {
         root(BuildoneRoot)
     }
