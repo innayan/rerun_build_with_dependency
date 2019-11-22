@@ -29,8 +29,8 @@ version = "2019.2"
 
 project {
 
-    vcsRoot(Buildtwo)
-    vcsRoot(Buildone)
+    vcsRoot(BuildtwoRoot)
+    vcsRoot(BuildoneRoot)
 
     buildType(BuildThreeSameVcs)
     buildType(BuildTwoSameVcs)
@@ -43,7 +43,7 @@ object BuildOne : BuildType({
     name = "build one"
 
     vcs {
-        root(Buildone)
+        root(BuildoneRoot)
     }
 
     steps {
@@ -68,7 +68,7 @@ object BuildThreeSameVcs : BuildType({
     name = "build three same VCS"
 
     vcs {
-        root(Buildone)
+        root(BuildoneRoot)
     }
 
     steps {
@@ -88,8 +88,8 @@ object BuildTwoSameVcs : BuildType({
     name = "build two same VCS"
 
     vcs {
-        root(Buildone)
-        root(Buildtwo)
+        root(BuildoneRoot)
+        root(BuildtwoRoot)
     }
 
     steps {
@@ -115,7 +115,7 @@ object Template_1 : Template({
     name = "template"
 
     vcs {
-        root(Buildone, "tet->tet")
+        root(BuildoneRoot, "tet->tet")
     }
 
     steps {
@@ -137,13 +137,13 @@ object Template_1 : Template({
     }
 })
 
-object Buildone : GitVcsRoot({
+object BuildoneRoot : GitVcsRoot({
     name = "buildone_root"
     url = "https://github.com/innayan/buildone"
     branchSpec = "+:*"
 })
 
-object Buildtwo : GitVcsRoot({
+object BuildtwoRoot : GitVcsRoot({
     name = "buildtwo_root"
     url = "https://github.com/innayan/buildtwo"
     branchSpec = "+:*"
